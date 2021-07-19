@@ -9,6 +9,7 @@ import './Pages/visibilitydemo.dart';
 import './Pages/cliprectdemo.dart';
 import './Pages/animatedicondemo.dart';
 import 'Pages/animatedcontainerdemo.dart';
+import 'Pages/urllauncherdemo.dart';
 
 void main() {
   SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: "/AnimatedContainerDemo",
+      initialRoute: "/UrlLaunchDemo",
       routes: {
         "/RichText":(context) => const RichTextDemo(title:"Richtext"),
         "/FlexibleDemo":(context) => const FlexibleDemo(title:"FlexibleDemo"),
@@ -36,6 +37,7 @@ class MyApp extends StatelessWidget {
         "/ClipRectDemo":(context) => const ClipRectDemo(title:"ClipRectDemo"),
         "/AnimatedIconDemo":(context) => const AnimatedIconDemo(title:"AnimatedIconDemo"),
         "/AnimatedContainerDemo":(context) => const AnimatedContainerDemo(title:"AnimatedContainerDemo"),
+        "/UrlLaunchDemo":(context) => const UrlLaunchDemo(title:"UrlLaunchDemo"),
       },
     );
   }
